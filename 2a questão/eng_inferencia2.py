@@ -133,7 +133,7 @@ class Diagnosis:
                     print("Obrigado! Até a próxima.")
                     return
                 else:
-                    print("Opção inválida. Por favor, escolha 'j' para se consultar novamente novamente, 'r' para ver o histórico ou 's' para sair.")
+                    print("Opção inválida. Por favor, escolha 'j' para se consultar novamente, 'r' para ver o histórico ou 's' para sair.")
 
     def show_history(self):
         print("\nHistórico de perguntas e respostas:")
