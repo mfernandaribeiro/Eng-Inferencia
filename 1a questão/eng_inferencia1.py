@@ -112,15 +112,15 @@ class AnimalClassifier:
       temp_node = current_node
       for item in temp_path:
           question, response = item.split(' = ')
-          print(f'{question} e {response}')
+          #print(f'{question} e {response}')
           if question in temp_node:
               if response == 'sim':
                   temp_node = temp_node[question].get('sim', {})
               elif response == 'não':
-                  print(temp_node[question])
+                  #print(temp_node[question])
                   temp_path.pop()  # Remova a última pergunta da cópia temporária do caminho
                   temp_node.pop(question, None)
-                  print(temp_node)
+                  #print(temp_node)
       if isinstance(temp_node, dict):
           for key, value in temp_node.items():
               if isinstance(value, str):
